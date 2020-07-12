@@ -1,0 +1,48 @@
+1. name
+2. telephone 
+3. password from account
+4. app title (hash) 
+5. app api_id
+6. app api_hash
+
+Faas (заблокирован)
+79867412169
+qwerty1q
+main_bot
+1752720
+a0765766ca82a9b117afbdd139da6e21
+
+Jangl (заблокирован)
++79118329505
+qwerty1q
+main_bot
+1520464
+eb72f66cae664e9111d406cf151bc3a1
+
+Фак (заблокирован)
+79640129434
+qwerty1q
+main_bot
+1645818
+77ebd7eea17f32b3ce68df83c493899c
+
+Freska27 (Макса)
++79504453382
+(неизвестно)
+Cat bot
+1349274
+24b65d768fbf8c28d747a3d92ba8dd06
+
+Григорий (Ви)
+79523318714
+(неизвестно)
+Parsing Chat
+1304439
+90e8cb7d804068d039cc12f1c491d529
+
+PUEBLO
+79058162044
+(неизвестно)
+WorldApp768
+1381073
+a7de705324c43af677c3ae0dfe740a66
