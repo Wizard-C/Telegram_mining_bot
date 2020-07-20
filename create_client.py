@@ -9,24 +9,29 @@ cur = db.cursor()
 # client.start()
 
 # Создание клиентов через
-number_of_iterations = 1
+number_of_iterations = 2
 for i in range(1, number_of_iterations+1):
+    # Вывод информации о том, какой аккаунт сейчас активируется
     print("Очередь аккаунта № " + str(i))
     cur.execute(f"SELECT PHONE FROM Account WHERE ID = '{i}'")
-    time.sleep(0.2)
     Phone = str(cur.fetchone()[0])
-    print("Входим в аккаунт: " + Phone)
+    cur.execute(f"SELECT NAME FROM Account WHERE ID = '{i}'")
+    Name = str(cur.fetchone()[0])
+    print("Входим в аккаунт: " + Phone + ', ' + Name)
+    
+    # Вывод его пароля
     cur.execute(f"SELECT PASS FROM Account WHERE ID = '{i}'")
-    time.sleep(0.2)
     password = str(cur.fetchone()[0])
     print(password)
+
+    # Копирование из БД его ID и Hash'а
     cur.execute(f"SELECT API_ID FROM Account WHERE ID = '{i}'")
-    time.sleep(0.2)
     api_id = str(cur.fetchone()[0])
     cur.execute(f"SELECT API_HASH FROM Account WHERE ID = '{i}'")
-    time.sleep(0.2)
     api_hash = str(cur.fetchone()[0])
-    session = str("anon" + str(i))
+
+    # Создание сессии и файла "accoun_'i'"
+    session = str("account_" + str(i))
     client = TelegramClient(session, api_id, api_hash)
     client.start()
     time.sleep(1)

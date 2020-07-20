@@ -22,11 +22,12 @@ Password = input('Введи Password: ')
 Api_id = input('Введи Api_id: ')
 Api_hash = input('Введи Api_hash: ')
 
+# example
 # Name = "Vi"
-# Phone = "+79058162044"
-# Password = "???"
-# Api_id = "1381073"
-# Api_hash = "a7de705324c43af677c3ae0dfe740a66"
+# Phone = "+79640129434"
+# Password = "pgpfdgpdfgr"
+# Api_id = "1645818"
+# Api_hash = "77ebd7eea17f32b3ce68df83c493899c"
 Activity = "ON"
 Litecoin = "ltc1qwpmykrnd7s56w3jtlcd5gxuxak9q0dpna8w498"
 

@@ -9,7 +9,7 @@ import json
 db = sqlite3.connect('Account.db')
 cur = db.cursor()
 
-number_of_iterations = 1
+number_of_iterations = 2
 total_amount = 0
 try:
     for i in range(1, number_of_iterations+1):
